@@ -1,0 +1,25 @@
+{
+	"name": "CLI",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"ink": "^2.1.1",
+		"react": "^16.8.6",
+		"xstate": "^4.5.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.4.3",
+		"@babel/core": "^7.4.3",
+		"@babel/preset-env": "^7.4.3",
+		"@babel/preset-es2015": "^7.0.0-beta.53",
+		"@babel/preset-react": "^7.0.0",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"nodemon": "^1.18.11"
+	},
+	"scripts": {
+		"compile": "babel src --watch --out-dir dist",
+		"serve": "nodemon --no-stdin index.js",
+		"start": "node index.js"
+	}
+}
